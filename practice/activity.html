@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif,Arial, Helvetica;
+        }
+        .container{
+            display: grid;
+            grid-template-rows: auto 1fr auto; /*nav-bar, content, footer*/
+            grid-template-columns: 1fr ; 
+            /*This creates a single-column layout that stacks its children vertically in rows.*/
+            height: 100vh;
+        }
+        .navbar{
+            background-color: green;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .menu{
+            margin-top: 10px;
+            display: flex;
+            font-size: 18px;
+        }
+        .menu a:hover{
+            color: white;
+            text-decoration: underline;
+        }
+        .content{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr; /*left middle right*/
+            gap: 20px;
+            padding: 20px;
+        }
+        .left-box, .right-box{
+            background-color: aliceblue;
+            padding: 40px;
+            text-align: center;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+        .left{
+            display: grid;
+            gap: 20px;
+        }
+        .footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div>Welcome to your first task</div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="left">
+            <div class="left-box">Left box-1</div>
+            <div class="left-box">Left box-2</div>
+            </div>
+
+            <div></div> <!--middle area-->
+
+            <div class="right-box">Right Box</div>
+        </div>
+        <div class="footer">
+            <a href="#">fb</a>
+            <a href="#">insta</a>
+            <a href="#">twitter</a>
+        </div>
+    </div>
+</body>
+</html>

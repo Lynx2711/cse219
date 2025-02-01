@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    /* "header header" */
+    "A B"
+    "A C";
+    height: 100vh;
+
+    /* "footer footer";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 250px 1fr;
+    height: 100vh; */
+}
+.A{
+    grid-area: A;
+    background-color: greenyellow;
+    padding: 1rem;
+    border-right: 1px solid #ddd;
+    text-align: center;
+}
+.B{
+    grid-area: B;
+    height: 50vh;
+    background-color: azure;
+    text-align: center;
+}
+.C{
+    grid-area: C;
+    height: 50vh;
+    /* background-color: blue; */
+    text-align: center;
+}

@@ -1,0 +1,53 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    background-color: green;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    
+    a{
+        text-decoration: none;
+    }
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "about   box"
+    "responsive  ";
+    
+    height: 100vh;
+    h3{
+        color: green;
+    }
+    p{
+        color: black;
+    }
+    
+}
+.about{
+    grid-area: about;
+    /* justify-content: left; */
+    width: 25%;
+    height: 50%;
+    box-shadow: 2px gray;
+}
+.responsive{
+    grid-area: responsive;
+    /* justify-content: left; */
+    width: 25%;
+    height: 50%;
+}
+.box{
+    grid-area: box;
+    /* justify-content: right; */
+    float: right;
+}
+footer{
+    background-color: black;
+    color: white;
+}
