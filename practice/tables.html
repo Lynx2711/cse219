@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 2px;
+            text-align: center;
+            font-family: sans-serif,Arial, Helvetica;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            text-align: left;
+            margin: auto;
+            /* this margin : auto will keep the table in centre */
+
+
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table practice</h1>
+    <table border="1">
+            <!-- table row will be inside the tr tag, header for the table will be with th tag and table data as td -->
+             <thead>
+             <tr>
+                <th>Name</th>
+                <th>Class</th>
+                <th>Section</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+                <td>Alice</td>
+                <td>SR</td>
+                <td>A</td>
+             </tr>
+             <tr>
+                <td>ADITI</td>
+                <td>SR</td>
+                <td>A</td>
+             </tr>
+             <tr>
+                <td>VERMA</td>
+                <td>SR</td>
+                <td>A</td>
+             </tr>
+            </tbody>
+    </table> 
+
+    <h1> merging</h1>
+    <table border="1">
+        <tr>
+            <!-- colspan 3 will make a single cell across three columns while rowspan will make the given number of row span over the first column  -->
+            <th colspan="3">Student Information</th>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>SR</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>ADITI</td>
+            <td>SR</td>
+            <td>A</td>
+         </tr>
+    </table>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Alice</td>
+            <td>25 years old</td>
+        </tr>
+        <tr>
+            <td>Lives in New York</td>
+        </tr>
+    </table>
+    <!-- to add a caption for the table we can use tha caption tag inside the table tag before the table header -->
+     <table border="1">
+        <caption>Employee salary data</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice</td>
+                <td>Developer</td>
+                <td>$80,000</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>Intern</td>
+                <td>$1000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>$150,000</td>
+            </tr>
+        </tfoot>
+     </table>
+</body>
+</html>
